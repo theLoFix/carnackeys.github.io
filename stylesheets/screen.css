@@ -56,6 +56,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Light-webfont.eot');
+  src: url('OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('OpenSans-Light-webfont.woff2') format('woff2'),
+       url('OpenSans-Light-webfont.woff') format('woff'),
+       url('OpenSans-Light-webfont.ttf') format('truetype'),
+       url('OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-LightItalic-webfont.eot');
+  src: url('OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('OpenSans-LightItalic-webfont.woff2') format('woff2'),
+       url('OpenSans-LightItalic-webfont.woff') format('woff'),
+       url('OpenSans-LightItalic-webfont.ttf') format('truetype'),
+       url('OpenSans-LightItalic-webfont.svg#OpenSans') format('svg');
+  font-weight: lighter;
+  font-style: italic;
+
+}
+
+
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -153,6 +181,11 @@ header span.ribbon-inner {
   z-index: 1;
 }
 
+header span.ribbon-inner>h2{
+  font-weight: lighter;
+  font-style: italic;
+}
+
 header span.left-tail, header span.right-tail {
   position: relative;
   display: block;
@@ -188,7 +221,7 @@ header h1 {
 
 header h2 {
   background-color: #7c334f;
-  font: bold italic .85em/1.5 Georgia, Times, “Times New Roman”, serif;
+  font-size: .95em;
   color: #e69b95;
   padding-bottom: 14px;
   margin-top: -3px;
@@ -313,7 +346,7 @@ footer span.ribbon-inner p {
   background-color: #7c334f;
   margin: 0;
   color: #e69b95;
-  font: bold italic 12px/1 Georgia, Times, “Times New Roman”, serif;
+  font: lighter italic 12px/1 "Open Sans", Myriad, Helvetica, sans-serif;
   padding-bottom:4px;
 }
 
@@ -386,6 +419,7 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', Myriad, Calibri, sans-serif;
   font-weight: bold;
 }
+
 
 p {
   margin: .7em 0;
